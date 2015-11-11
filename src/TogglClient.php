@@ -3,19 +3,19 @@
 namespace Jamosaur\Toggl;
 
 use Guzzle\Common\Collection;
-use Guzzle\Service\Client;
-use Guzzle\Service\Description\ServiceDescription;
 use Guzzle\Plugin\Log\LogPlugin;
 use Guzzle\Plugin\CurlAuth\CurlAuthPlugin;
+use Guzzle\Service\Client;
+use Guzzle\Service\Description\ServiceDescription;
 
 /**
- * A TogglClient
+ * A TogglClient.
  */
 class TogglClient extends Client
 {
 
     /**
-     * Factory method to create a new TogglClient
+     * Factory method to create a new TogglClient.
      *
      * The following array keys and values are available options:
      * - base_url: Base URL of web service
@@ -29,18 +29,18 @@ class TogglClient extends Client
      */
     public static function factory($config = array())
     {
-        $default = array(
+        $default = [
             'base_url' => 'https://www.toggl.com/api/{apiVersion}',
             'debug' => false,
             'apiVersion' => 'v8'
-        );
-        $required = array('api_key', 'base_url','apiVersion');
+        ];
+        $required = ['api_key', 'base_url','apiVersion'];
         $config = Collection::fromConfig($config, $default, $required);
 
         $client = new self($config->get('base_url'), $config);
         // Attach a service description to the client
         if ($config->get('apiVersion') == 'v8') {
-            $description = ServiceDescription::factory(__DIR__ . '/services_v8.json');
+            $description = ServiceDescription::factory(__DIR__.'/services_v8.json');
         } else {
             die('Only v8 is supported at this time');
         }
@@ -48,7 +48,7 @@ class TogglClient extends Client
         $client->setDescription($description);
 
         $client->setDefaultHeaders([
-            "Content-type" => "application/json",
+            'Content-type' => 'application/json',
         ]);
 
         $authPlugin = new CurlAuthPlugin($config->get('api_key'), 'api_token');
@@ -64,11 +64,10 @@ class TogglClient extends Client
     /**
      * Shortcut for executing Commands in the Definitions.
      *
-     * @param string $method
+     * @param string     $method
      * @param array|null $args
      *
      * @return mixed|void
-     *
      */
     public function __call($method, $args = null)
     {
