@@ -2,10 +2,12 @@
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Software License][ico-license]](LICENSE.md)
+[![Style CI][ico-styleci]][link-styleci]
 [![Build Status][ico-travis]][link-travis]
 [![Coverage Status][ico-scrutinizer]][link-scrutinizer]
 [![Quality Score][ico-code-quality]][link-code-quality]
 [![Total Downloads][ico-downloads]][link-downloads]
+[!]
 
 This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what
 PSRs you support to avoid any confusion with users and contributors.
@@ -15,14 +17,17 @@ PSRs you support to avoid any confusion with users and contributors.
 Via Composer
 
 ``` bash
-$ composer require league/phpToggl
+$ composer require jamosaur/phpToggl
 ```
 
 ## Usage
 
 ``` php
-$skeleton = new League\Skeleton();
-echo $skeleton->echoPhrase('Hello, League!');
+use Jamosaur\Toggl\TogglClient;
+
+$toggl = TogglClient::factory([
+
+]);
 ```
 
 ## Change log
@@ -58,11 +63,13 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 [ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/thephpleague/phpToggl.svg?style=flat-square
 [ico-code-quality]: https://img.shields.io/scrutinizer/g/thephpleague/phpToggl.svg?style=flat-square
 [ico-downloads]: https://img.shields.io/packagist/dt/league/phpToggl.svg?style=flat-square
+[ico-styleci]: https://styleci.io/repos/44802443/shield
 
-[link-packagist]: https://packagist.org/packages/league/phpToggl
-[link-travis]: https://travis-ci.org/thephpleague/phpToggl
-[link-scrutinizer]: https://scrutinizer-ci.com/g/thephpleague/phpToggl/code-structure
-[link-code-quality]: https://scrutinizer-ci.com/g/thephpleague/phpToggl
-[link-downloads]: https://packagist.org/packages/league/phpToggl
+[link-packagist]: https://packagist.org/packages/jamosaur/phpToggl
+[link-travis]: https://travis-ci.org/jaaaaaaaaaam/phpToggl
+[link-scrutinizer]: https://scrutinizer-ci.com/g/jamosaur/phpToggl/code-structure
+[link-code-quality]: https://scrutinizer-ci.com/g/jamosaur/phpToggl
+[link-downloads]: https://packagist.org/packages/jamosaur/phpToggl
 [link-author]: https://github.com/jamosaur
 [link-contributors]: ../../contributors
+[link-style-ci]: https://styleci.io/repos/44802443
