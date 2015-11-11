@@ -78,6 +78,7 @@ class TogglClient extends Client
         if (is_array($result) && isset($result['data'])) {
             return $result['data'];
         }
+
         return $result;
     }
 }
