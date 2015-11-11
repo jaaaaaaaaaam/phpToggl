@@ -13,7 +13,6 @@ use Guzzle\Service\Description\ServiceDescription;
  */
 class TogglClient extends Client
 {
-
     /**
      * Factory method to create a new TogglClient.
      *
@@ -57,7 +56,6 @@ class TogglClient extends Client
         if ($config->get('debug')) {
             $client->addSubscriber(LogPlugin::getDebugPlugin());
         }
-
         return $client;
     }
 
