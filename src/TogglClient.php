@@ -56,6 +56,7 @@ class TogglClient extends Client
         if ($config->get('debug')) {
             $client->addSubscriber(LogPlugin::getDebugPlugin());
         }
+
         return $client;
     }
 
