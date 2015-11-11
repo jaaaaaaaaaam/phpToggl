@@ -32,7 +32,7 @@ class ReportsClient extends Client
         $default = [
             'base_url'   => 'https://www.toggl.com/reports/api/{apiVersion}',
             'debug'      => false,
-            'apiVersion' => 'v2'
+            'apiVersion' => 'v2',
         ];
         $required = ['api_key', 'base_url', 'apiVersion'];
         $config = Collection::fromConfig($config, $default, $required);

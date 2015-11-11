@@ -32,7 +32,7 @@ class TogglClient extends Client
         $default = [
             'base_url'   => 'https://www.toggl.com/api/{apiVersion}',
             'debug'      => false,
-            'apiVersion' => 'v8'
+            'apiVersion' => 'v8',
         ];
         $required = ['api_key', 'base_url','apiVersion'];
         $config = Collection::fromConfig($config, $default, $required);
