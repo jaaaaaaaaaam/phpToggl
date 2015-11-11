@@ -13,7 +13,6 @@ use Guzzle\Service\Description\ServiceDescription;
  */
 class ReportsClient extends Client
 {
-
     /**
      * Factory method to create a new TogglClient.
      *
