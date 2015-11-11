@@ -3,8 +3,8 @@
 namespace Jamosaur\Toggl;
 
 use Guzzle\Common\Collection;
-use Guzzle\Plugin\Log\LogPlugin;
 use Guzzle\Plugin\CurlAuth\CurlAuthPlugin;
+use Guzzle\Plugin\Log\LogPlugin;
 use Guzzle\Service\Client;
 use Guzzle\Service\Description\ServiceDescription;
 
@@ -27,11 +27,11 @@ class ReportsClient extends Client
      *
      * @return ReportsClient
      */
-    public static function factory($config = array())
+    public static function factory($config = [])
     {
         $default = [
-            'base_url' => 'https://www.toggl.com/reports/api/{apiVersion}',
-            'debug' => false,
+            'base_url'   => 'https://www.toggl.com/reports/api/{apiVersion}',
+            'debug'      => false,
             'apiVersion' => 'v2'
         ];
         $required = ['api_key', 'base_url', 'apiVersion'];
