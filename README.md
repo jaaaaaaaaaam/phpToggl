@@ -64,7 +64,7 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 [ico-styleci]: https://styleci.io/repos/44802443/shield
 
 [link-packagist]: https://packagist.org/packages/jamosaur/php-toggl
-[link-travis]: https://travis-ci.org/jaaaaaaaaaam/php-toggl
+[link-travis]: https://travis-ci.org/jaaaaaaaaaam/phpToggl
 [link-scrutinizer]: https://scrutinizer-ci.com/g/jaaaaaaaaaam/php-toggl/code-structure
 [link-code-quality]: https://scrutinizer-ci.com/g/jaaaaaaaaaam/php-toggl
 [link-downloads]: https://packagist.org/packages/jaaaaaaaaaam/php-toggl
