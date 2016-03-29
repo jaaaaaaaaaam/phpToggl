@@ -55,19 +55,19 @@ If you discover any security related issues, please email j.wallen.jones@googlem
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
-[ico-version]: https://img.shields.io/packagist/v/jaaaaaaaaaam/phpToggl.svg?style=flat-square
+[ico-version]: https://img.shields.io/packagist/v/jamosaur/phpToggl.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/jaaaaaaaaaam/phpToggl/master.svg?style=flat-square
-[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/jaaaaaaaaaam/phpToggl.svg?style=flat-square
-[ico-code-quality]: https://img.shields.io/scrutinizer/g/jaaaaaaaaaam/phpToggl.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/jaaaaaaaaaam/phpToggl.svg?style=flat-square
+[ico-travis]: https://img.shields.io/travis/jamosaur/phpToggl/master.svg?style=flat-square
+[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/jamosaur/phpToggl.svg?style=flat-square
+[ico-code-quality]: https://img.shields.io/scrutinizer/g/jamosaur/phpToggl.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/jamosaur/phpToggl.svg?style=flat-square
 [ico-styleci]: https://styleci.io/repos/44802443/shield
 
 [link-packagist]: https://packagist.org/packages/jamosaur/php-toggl
-[link-travis]: https://travis-ci.org/jaaaaaaaaaam/phpToggl
-[link-scrutinizer]: https://scrutinizer-ci.com/g/jaaaaaaaaaam/php-toggl/code-structure
-[link-code-quality]: https://scrutinizer-ci.com/g/jaaaaaaaaaam/php-toggl
-[link-downloads]: https://packagist.org/packages/jaaaaaaaaaam/php-toggl
+[link-travis]: https://travis-ci.org/jamosaur/phpToggl
+[link-scrutinizer]: https://scrutinizer-ci.com/g/jamosaur/php-toggl/code-structure
+[link-code-quality]: https://scrutinizer-ci.com/g/jamosaur/php-toggl
+[link-downloads]: https://packagist.org/packages/jamosaur/php-toggl
 [link-author]: https://github.com/jamosaur
 [link-contributors]: ../../contributors
 [link-style-ci]: https://styleci.io/repos/44802443
